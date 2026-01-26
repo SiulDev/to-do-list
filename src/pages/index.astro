@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout tittle="To-do-list-pro">
+  <main class="bg-white w-[400px] p-7 rounded-lg shadow-lg">
+    <h1 class="text-3xl font-bold text-purple-600 mb-6 text-center">Mis Tareas</h1>
+
+    <div class="flex justify-between">
+      <input
+        type="text"
+        id="inputNuevaTarea"
+        class="w-[70%] p-2.5 border-2 border-gray-300 rounded-lg outline-none focus:border-purple-600 text-gray-900 placeholder-gray-500"
+        placeholder="¿Qué harás hoy?"
+      />
+      <button
+        id="btnAgregar"
+        class="px-4 py-2 bg-purple-600 hover:opacity-90 text-white rounded-lg font-bold border-none cursor-pointer"
+        >Crear</button
+      >
+    </div>
+
+    <ul id="listaTareas" class="list-none p-0"></ul>
+
+    <script>
+      import "../scripts/todoLogic.js";
+    </script>
+  </main>
+</Layout>

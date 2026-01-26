@@ -1,0 +1,51 @@
+---
+interface Props {
+  tittle: string;
+}
+const { tittle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{tittle}</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+
+  <style is:global>
+    body {
+      background-color: var(--color-fondo);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+
+    @keyframes aparecer {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      25% {
+        opacity: 0.4;
+        transform: translateY(-15px);
+      }
+
+      50% {
+        opacity: 0.8;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</html>
