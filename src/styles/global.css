@@ -1,8 +1,9 @@
 :root {
-  --color-primario: #6200ea; /* Morado fuerte */
-  --color-secundario: #03dac6; /* Turquesa */
-  --color-peligro: #b00020; /* Rojo para borrar */
-  --color-fondo: #f5f5f5;
+  --color-primario: #ffffff; /* Morado fuerte */
+  --color-secundario: #d5e0df; /* Turquesa */
+  --color-peligro: #f00f38; /* Rojo para borrar */
+  --color-fondo: #010c1a;
+  --color-fondo-translucido: rgba(255, 255, 255, 0.205);
   --texto-oscuro: #333;
   --borde-radio: 8px; /* Redondeado estándar para todo */
 }
