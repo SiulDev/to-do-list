@@ -1,9 +1,10 @@
 :root {
-  --color-primario: #ffffff; /* Morado fuerte */
-  --color-secundario: #d5e0df; /* Turquesa */
-  --color-peligro: #f00f38; /* Rojo para borrar */
-  --color-fondo: #010c1a;
-  --color-fondo-translucido: rgba(255, 255, 255, 0.205);
-  --texto-oscuro: #333;
-  --borde-radio: 8px; /* Redondeado estándar para todo */
+  --color-primary: #ffffff;
+  --color-secondary: #f09448;
+  --color-danger: #e4022b;
+  --color-background: #353535;
+  --color-background-secondary: #283446;
+  --color-background-translucent: rgba(255, 255, 255, 0.205);
+  --text-dark: #333;
+  --border-radius: 8px;
 }

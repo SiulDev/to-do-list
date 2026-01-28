@@ -33,11 +33,11 @@ function renderizarLista() {
 
   for (let i = 0; i < tareas.length; i++) {
     listaUI.innerHTML += `
-    <li class="text-secundario bg-translucido border-b-2 border-translucido p-3 mb-2 flex justify-between items-center" style="animation: aparecer 0.4s linear forwards;">
-        <span>${tareas[i].texto}</span>
-        <button class="bg-none border-none cursor-pointer p-1.25 transition-transform duration-200 hover:scale-110" onclick="borrarTarea(${tareas[i].id})"><i class='bx bx-trash text-xl text-red-600'></i></button>
+    <li class="text-primary bg-backgroundSecondary border-b-2 border-translucent p-3 mb-2 flex justify-between items-center" style="animation: aparecer 0.4s linear forwards;">
+      <span>${tareas[i].texto}</span>
+      <button class="bg-none border-none cursor-pointer p-1.25 transition-transform duration-200 hover:scale-110" onclick="borrarTarea(${tareas[i].id})"><i class='bx bx-trash text-xl text-danger'></i></button>
     </li>
-`;
+  `;
   }
 
   console.log("Dibujando lista en pantalla...");

@@ -4,15 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primario: "var(--color-primario)",
-        secundario: "var(--color-secundario)",
-        peligro: "var(--color-peligro)",
-        fondo: "var(--color-fondo)",
-        "texto-oscuro": "var(--texto-oscuro)",
-        translucido: "var(--color-fondo-translucido)"
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        danger: "var(--color-danger)",
+        background: "var(--color-background)",
+        backgroundSecondary: "var(--color-background-secondary)",
+        dark: "var(--text-dark)",
+        translucent: "var(--color-background-translucent)"
       },
       borderRadius: {
-        estandar: "var(--borde-radio)"
+        standard: "var(--border-radius)"
       }
     }
   },
